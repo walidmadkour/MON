@@ -14,7 +14,3 @@ if ping -c5 google.com; then
 else
     [[ `cat $TMP_FILE` == 0 ]] && no_inet_action || echo 0 > $TMP_FILE
 fi
-
-chmod +x check_inet.sh
-
-* * * * * root /root/check_inet.sh
